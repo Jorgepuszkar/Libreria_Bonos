@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  bonos-lib:
+    build: .
+    container_name: bonos-lib-dev
+    ports:
+      - "8888:8888"  # Jupyter Lab
+    volumes:
+      - .:/app
+      - ./notebooks:/workspace/notebooks
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    stdin_open: true
+    tty: true
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''
+
+  bonos-tests:
+    build: .
+    container_name: bonos-lib-tests
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: pytest tests/ -v --tb=short
+    profiles:
+      - test
+
+  bonos-shell:
+    build: .
+    container_name: bonos-lib-shell
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    profiles:
+      - shell
