@@ -44,7 +44,7 @@ dias,precio
 
 ## Tutorial
 
-Abre el tutorial en Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/usuario/bonos-lib/blob/main/notebook/tutorial.ipynb)
+Abre el tutorial en Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jorgepuszkar/Libreria_Bonos/blob/main/notebook/tutorial.ipynb)
 
 ## Documentación
 
