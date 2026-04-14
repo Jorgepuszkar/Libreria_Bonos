@@ -25,6 +25,8 @@ setup(
     install_requires=[
         "pandas>=1.0.0",
         "numpy>=1.19.0",
+        "matplotlib>=3.3.0",
+        "seaborn>=0.11.0",
     ],
     extras_require={
         "dev": ["pytest>=6.0", "pytest-cov>=2.10.0"],
