@@ -17,8 +17,9 @@ COPY . .
 # Install the library
 RUN pip install --no-cache-dir -e .
 
-# Install additional tools for development
-RUN pip install --no-cache-dir pytest jupyter jupyterlab matplotlib
+# Install development dependencies
+COPY requirements-dev.txt .
+RUN pip install --no-cache-dir -r requirements-dev.txt
 
 # Create notebooks directory
 RUN mkdir -p /workspace/notebooks
