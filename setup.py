@@ -7,11 +7,11 @@ setup(
     name="bonos-lib",
     version="0.2.0",
     author="Tu Nombre",
-    author_email="tu.email@example.com",
+    author_email="jpuszkar@itam.mx",
     description="Librería para yield curves de bonos cupón cero",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/usuario/bonos-lib",
+    url="https://github.com/Jorgepuszkar/Libreria_Bonos",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
