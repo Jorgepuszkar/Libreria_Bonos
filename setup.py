@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="bonos-lib",
-    version="0.1.0",
+    version="0.2.0",
     author="Tu Nombre",
     author_email="tu.email@example.com",
     description="Librería para yield curves de bonos cupón cero",
